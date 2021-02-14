@@ -1,0 +1,60 @@
+Task from Powershell part 2
+
+Mr. Tomasz said that we don't have too describe
+all of tasks in Powershell so I choose a few to
+describe.
+
+Processes and discs - commands:
+
+We can se disc on our system when we write command:
+Get-PSDrive
+
+If we want to enter the register we write command:
+cd hklm:\
+
+We can list contents of this register by using command:
+ls
+
+WMI is used to manage the system.
+Wmi commands:
+
+If we use this command we can see Microsoft packages:
+Get-WmiObject -Class Win32_Product | Format-Table -AutoSize
+
+If we want to show all of Microsoft packages:
+Get-WmiObject -Class Win32_Product | ?{$_.Vendor.toLower() -like "*microsoft*"} | Select-Object Name, Vendor | Format-Table -AutoSize
+
+Notifications - we see a communicate on screen.
+For example: 
+function GiveMePopup {
+    param(
+        [Parameter(Mandatory=$true)]
+        $Text,
+   
+        [Parameter(Mandatory=$true)]
+        $Title,
+   
+        [ValidateSet('None', 'Info', 'Warning', 'Error')]
+        $Icon = 'Info',
+
+        $Timeout = 10000
+    )
+    [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
+    $icoPath = Get-Process -id $pid | Select-Object -ExpandProperty Path
+    $myNotification = New-Object System.Windows.Forms.NotifyIcon
+    $myNotification.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon($icoPath)
+    $myNotification.BalloonTipIcon = $Icon
+    $myNotification.BalloonTipText = $Text 
+    $myNotification.BalloonTipTitle = $Title
+    $myNotification.Visible = $True 
+    $myNotification.ShowBalloonTip(1000)
+}
+
+GiveMePopup -Text "Your cat has meowed!" -Title "Cat Error" -Icon Error
+
+We see a communicat on screen:
+----------------------
+|Cat Error	      |
+|Your cas has meowed! |
+|WindowsPowershell    |
+----------------------

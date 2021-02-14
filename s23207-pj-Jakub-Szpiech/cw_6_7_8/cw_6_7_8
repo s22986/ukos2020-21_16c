@@ -1,0 +1,9 @@
+1. sprawdzenie "Get-ExecutionPolicy", następnie ustawienie na "Bypass" z poziomu administratora.
+2. Get-Module -ListAvailable - wyświetliło dostępne moduły, w dwóch folderach. Większość to manifesty, kilka skryptów.
+Przefiltrowałem tak, żeby pokazało tylko wersje 2.0 i wyższe, a potem 2.0 i niższe (-le)
+Wyświetliłem dostępne moduły w tabelce graficznej a potem zapisałem do pliku
+3. sciągnąłem plik z sieci, jednak był za mały żeby wykonać pozostałe komendy
+4. użycie Measure-Command {Get-Module -ListAvailable}. Zajęło około 2,784 sekundy
+5. Wylistowanie dostępnych dysków "Get-PSDrive", przejście do hklm, wylistowanie zawartości...
+6. Ćwiczenia z komendą Get-WmiObject
+7. Uruchomienie funkcji GiveMePopup i wywołanie kilku komunikatów

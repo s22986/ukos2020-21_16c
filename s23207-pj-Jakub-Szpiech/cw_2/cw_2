@@ -1,0 +1,4 @@
+1. logowanie do szuflandi: ssh numer_indeksu@szuflandia.pjwstk.edu.pl,następnie hasło.
+Utworzyłem kilka katalogów, każdemu nadałem inne uprawnienia przy pomocy komendy chmod.
+Zeby podłożyć kukułcze jajo w innym katalogu, potrzebne sąuprawnienia w+x
+4. Utworzyłem strone na serwerze szuflandii. Aby ją wyświetlić trzeba mieć prawo do odczytu (read).

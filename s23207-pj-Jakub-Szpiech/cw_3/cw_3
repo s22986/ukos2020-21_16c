@@ -1,0 +1,44 @@
+Przejdż do katalogu domowego i wydaj komende ls -a
+Wypisało mi listę katalogów i plików. Również takie, których nie widać przy zwykłej komendzie "ls"
+
+ls -a | grep D
+Wypisało pliki/foldery zawierające litere D
+
+ls -a | grep D > listaplikówzliterkąD.txt
+wyeksportowało wyniki do pliku. 
+
+1
+1. ps aux | grep bash
+2. ps aux | grep root
+
+2
+1. uruchomienie gedit
+2. ps aux | grep gedit
+3. kill 1970 - edytor się wyłączył, nie ma go w procesach
+4. shell: no process found
+5. nie działa dla root: bash: kill: (1979) - Operation not permitted
+
+3
+1.  uruchomienie cat bez parametrów. 
+2. skrót ctrl+c kończy proces
+
+1. komenda cat > wynik1.txt
+2. wpisano 'witaj' bez wciskania enter
+3. ctrl+c
+4. plik się utworzył, ale jest pusty
+
+1. komenda cat > wynik2.txt
+2. wpisano 'witaj' bez wciskania enter
+3. ctrl+d
+4. plik się utworzył, ze słowem 'witaj'
+
+4
+1. komenda gimp zwraca: "Command 'gimp' not found, but can be installed with:
+sudo apt install gimp"
+próbowałem zainstalować, ale się nie powiodło
+Użyto komendy "gedit"
+2. ctrl+z
+3. gedit nie odpowiada
+
+1. komenda "bg" ożywiła gedit
+

@@ -1,0 +1,27 @@
+1.
+ścieżka względna cd ../../../kot/ma/ale
+ścieżka bezwględna cd/home/ubuntu/kot/ma/ale
+
+2.
+ mkdir -p /home/ubuntu/kot/ma/ale/jan/kowalski
+
+3. mv /home/ubuntu/kot/ma/ale /home/ubuntu/ala/i
+
+4.
+sprawdzić proces przy użyciu "ps -aux", następnie kill [ID]
+
+5. 
+ls -la | grep al
+
+6.
+notacja ósemkowa:chmod 751 ala
+notacja symboliczna: chmod u=rwx,g=r,o=x ala
+
+7.
+ls -la > plik
+
+9.
+klawisz TAB automatycznie uzupełnia reszte komendy
+
+10.
+nazwa programu oraz &

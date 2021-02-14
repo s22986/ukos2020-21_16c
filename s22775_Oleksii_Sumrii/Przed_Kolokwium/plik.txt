@@ -1,0 +1,24 @@
+(1) 
+  ścieżka względna: cd ../../../kot/ma/ale
+  scieżka bezwzględna: cd /home/ubuntu/kropa/kot/ma/ale
+(2) 
+ mkdir -p /home/ubuntu/kropa/kot/ma/ale/jan/kowalski
+(3) 
+  mv /home/ubuntu/kropa/kot/ma/ale /home/ubuntu/kropa/ala/i
+(4)
+  Można użyć do tego komedy kill
+(5)
+  ls -la | grep al
+(6)
+  notacja ósemkowa: chmod 751 ala
+  notacja symboliczna: chmod u=rwx,g=r,o=x ala
+(7) 
+  ls -la > plik
+(8)
+  Nie ma miejsca na dysku na stworzenie pliku.
+ Zostało odebrane prawo do zapisu pliku.
+(9)
+Przy użyciu strzałki w górę można wstawić wcześniej użyte komendy
+(10)
+1. Wpisać nazwę programu i &
+2. Uruchomić terminal zatrzymać go przy użyciu ctrl+z  i użyć polecenia bg zeby działał w tle

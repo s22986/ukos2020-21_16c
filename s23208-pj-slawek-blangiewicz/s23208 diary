@@ -1,0 +1,31 @@
+2020.11.07
+Na zajeciach z UKOS zdobyłem wiedzę potrzebną do ukończenia tego zadania.
+
+2020.11.13
+Podczas ostatnich zajec nauczylem sie nadawanie oraz odbierania praw dostepu do plikow i katalogow. Dzieki pracy, ktora wykonalem znacznie
+latwiej jest mi sie poruszac w systemie Linux. Opanowalem rowniez podstawy Gita oraz powtorzylem zadania z pierwszych cwiczen.
+Najwieksze wyzwanie stanowilo dla mnie zadanie z komenda umask. Nie do konca rozumiem czy dobrze interpretuje zapis. Chcialbym poruszyc
+ten temat na przyszlych cwiczeniach. 
+Oprocz polecenia umask reszta przerobionych zagadnien jest dla mnie zrozumiala. Na niektore musialem poswiecic wiecej czasu, ale mysle, ze 
+poswiecajac odpowiednia ilosc czasu mozna opanowac kazde zagadnienie. 
+Gdy wykonywalem zadania z pierwszych cwiczen po raz pierwszy nie wiedzialem czy dobrze interpretuje sciezke bezwzgledna i wzgledna, teraz 
+rozumiem oba zagadnienia. Jednak sa jakies plusy z wykonania zadan po raz drugi :D.
+Nie bede sie rozpisywal w pamietniku, reszte moich spostrzezen na temat wykonywanych zadan zawarlem w plikach z rozwiazaniami.
+
+2020.12.05
+Na ostatnich zajeciach nauczylem sie wielu nowych rzeczy i ta lekcja sprawila mi najwieksza trudnosc. Nie wiem dlaczego po uzyciu &
+program nie uruchomil sie w tle. Dowiedzialem sie co dzieje sie po uzyciu ctrl+c, ctrl +z oraz ctrl +d. Mysle, ze w koncu uda mi sie wyslac 
+poprawnego pull requesta. Wykonalem rowniez zadania z powtorki do kolokwium, ktore na pozor wydawaly sie latwe, a w rzeczywistosci bylo
+inaczej. Niektore zadania sprawily mi duzy problem. Mam nadzieje, ze moje watpliwosci rozwieja nastepne cwiczenia z UKOS.
+
+2020.12.19
+Dzisiejsze zajecia sa powtorka przed kolokwium. Przypomnialem sobie dzialanie niektorych polecen oraz znacznie bardziej zrozumialem strumienie,
+dzieki powtorce. Przydala sie rowniez powtorka z uprawnien, poniewaz rozwialo to kilka moich watpliwosci.
+
+2021.01.16
+2021.01.30
+2021.02.13
+Na ostatnich trzech zajeciach pracowalismy w PS. Nauczylem sie tego jak zrobic wlasna notyfikacje, moze nie jest to bardzo potrzebne, ale 
+interesujace. Dowiedzialem sie jakie dane przechowuje te "dziwne" dyski, ktore listuje polecenie Get-PSDrive. Pisanie skryptow w PS jest 
+bardzo trudne, lecz warto pojac chociaz podstawy, poniewaz ostatnie trzy lekcje pokazaly mi jak bardzo ulatwic zycie moze umiejetnosc pisania
+skryptow w PS.

@@ -1,0 +1,41 @@
+Dzięki użyciu Set-ExecutionPlicy Bypass możemy uruchamiać skrypty.
+1.Get-Help Get-ExecutionPolicy - wyświetla pomoc do polecenia Get-ExecutionPolicy.
+
+2.Get-Help Get-ExecutionPolicy -Examples - wyświetla przykłady użycia Get-ExecutionPolicy.
+
+3.Get-Module -ListAvailable - rzeczywiście wykonuje się dłuższą chwilę, ale wyświetla wszystkie moduły
+
+4.Get-Module -ListAvailable | ? {$_.Version -ge "2.0.0.0"} - zwraca moduły w wersji 2.0.0.0 lub wyższej. O tym jak działa
+potok nauczyłem się już na wcześniejszych zajęciach. Zmienna $_ jest dla mnie czymś nowym.
+Bardzo fajną ciekawostką  jest skrót "?" oraz "%".
+
+5.Get-Module -ListAvailable | ? {$_.Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} | ? {($_.Name -like "Add-*") -or ($_.Name -like "Get-*")} | Out-GridView
+Dzięki temu poleceniu jego wynik jest przedstawiony w znacznie bardziej przyjemnej dla oka wersji oraz możemy łatwo filtrować interesujące nas dane.
+
+6. Zapisanie wyniku danego polecenia do pliku jest ciekawą możliwością, lecz w PowerShellu robi się to znacznie trudniej niż w linuxowym terminalu.
+
+7.Start-BitsTransfer -Source http://szuflandia.pjwstk.edu.pl/pub/repo/java/lubuntu_13_04_v02.zip -Destination D:\ -Credential $cred -Authentication Negotiate
+użycie tej komendy niestety zablokowało mi konsole, lecz chwilę póżniej zauważyłem, że można wykonać tak, aby nie blokować konsoli.
+
+8.Measure-Command {Get-ChildItem -Path C:\Windows} - wyświetla dni, godziny, minuty, sekundy itd. Możemy zobaczyć czas wykonania polecenia z dużą dokładnością.
+
+9. & C:\Windows\notepad.exe - uruchamia Notepada. Ciekawym jest fakt, że w PS użycie & na początku działa jako operator wołania, natomiast w linuxie & użyte na końcu
+uruchamia program w tle.
+
+10.cd HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+ls | %{
+    Get-ItemProperty $_.pspath | Select-Object DisplayName, InstallDate, UninstallString
+} | Format-Table -AutoSize
+Po użyciu tego polecenia widać jak przydatna jest umiejętność pisania skryptów w PS. Z dużej ilości tekstu, który ciężko się czyta otrzymaliśmy jedynie te dane, które
+nas interesują. 
+
+11.Get-WmiObject -Class Win32_Product | Select-Object Name, Vendor | Format-Table -AutoSize - wyświetla bez numeru identyfikacyjnego. Dzięki Select-Object możemy wyświetlać
+tylko te dane, któe nas interesują.
+
+12.Get-WmiObject -Class Win32_Product | ?{$_.Vendor.toLower() -like "*microsoft*"} | Select-Object Name, Vendor | Format-Table -AutoSize
+Wyświetla pakiety Microsoftu. Moją uwagę przyciągnęło również "toLower()", które zamienia wielkie znaki na małe. Jest to kolejna warta zapamiętania ciekawostka
+
+13.Get-PSDrive - wyswietla dyski o istnieniu, których wcześniej nie wiedziałem, a z udostępnionego mi pliku dowiedziałem się nawet jakie dane przechowują.
+
+14.Notyfikacje są dla mnie najbardziej interesującą częścią zajęć. Zobaczyłem jak działa przykładowa notyfikacja w PS, ale dowiedziałem się również jak samemu utworzyć
+notyfikację.

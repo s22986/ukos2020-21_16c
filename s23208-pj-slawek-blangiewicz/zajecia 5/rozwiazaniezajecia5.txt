@@ -1,0 +1,42 @@
+Utwórz plik o nazwie program.c za pomocą polecenia touch, a dopiero później go otwórz w aktualnie testowanym edytorze. 
+Wpisz taką zawartość. Już na początku zaobserwujesz pewne ciekawe zjawiska (w zależności od edytora). Polecam sprawdzić: 
+nano, vi, mcedit, geany oraz atom (o ile jest) lub jedit.
+
+Edytory te "kolorują" wpisany przez nas text, dzięki czemu zapisany przez nas kod jest bardziej przejrzysty i przyjemny dla oka. 
+Dowiedziałem się z dzisiejszej lekcji, że ctrl+ spacja pomoże również uzupełnić składnię co również jest bardzo pomocne.
+
+ubuntu@bss-ubu1804:~/Desktop$ diff nowy.c program.c
+9,11c9,11
+< printf("#                        #\n");
+< printf("#      Licze: %d         #\n");
+< printf("#                        #\n");
+---
+> printf("|                        |\n");
+> printf("|      Licze: %d         |\n");
+> printf("|                        |\n");
+ubuntu@bss-ubu1804:~/Desktop$
+
+Wyświetliły się różnice między jednym plikiem a drugim oraz nr linii, gdzie występują różnice.
+
+
+
+ubuntu@bss-ubu1804:~/Desktop$ diff -y nowy.c program.c
+#inluce <stdio.h> #inluce <stdio.h>
+#include <stdlib.h> #include <stdlib.h>
+
+int main(int argc, char **argv) int main(int argc, char **argv)
+{ {
+for (i=0; i<10; i++) for (i=0; i<10; i++)
+{ {
+printf("+------------------------+\n"); printf("+------------------------+\n");
+printf("#                        #\n");      | printf("|                        |\n");
+printf("#      Licze: %d         #\n");      | printf("|      Licze: %d         |\n");
+printf("#                        #\n");      | printf("|                        |\n");
+printf("+------------------------+\n"); printf("+------------------------+\n");
+} }
+return 0; return 0;
+} }
+ubuntu@bss-ubu1804:~/Desktop$
+
+Diff -y wyświetla cały kod zapisany w pliku nowy.c po lewej stronie oraz program.c po prawej stronie dzięki czemu możemy szybko zobaczyć różnice
+w kodzie.

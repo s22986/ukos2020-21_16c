@@ -1,0 +1,1 @@
+chmod 751 ala lub chmod u=rwx,g=r,o=x ala

@@ -1,0 +1,20 @@
+Edytory tekstu w programowaniu pozwalają lepiej zrozumieć działania
+zachodzące w nich - na przykład poprzez kolorowanie słów lub funkcji.
+
+Jeśli użyjemy polecenia: diff -y nowy.c program.c
+
+#include <stdio.h>                     
+#include <stdlib.h>                   
+
+int main (int argc, char **argv)       
+{                                      
+for(i=0; i<10; i++)                    
+{                                      
+printf("+----------+\n");               
+printf("#           #\n", i);    
+printf("# Licze: %d #\n");      
+printf("#           #\n");      
+printf("+----------+\n");              
+}                                       
+return 0;                               
+}                                       

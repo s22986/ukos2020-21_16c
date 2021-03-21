@@ -1,0 +1,18 @@
+13.11.2020
+
+
+
+1. uruchomiłem LXTerminal
+2. użyłem polecenia "ls", wyswietliło zawartość aktualnego katalogu
+3. użyłem polecenia "pwd", wyświetliła się obecna lokalizacja: /home/ubuntu
+4. użyłem polecenia "cd Desktop". Dowiedziałem się, że wielkosć znaków ma znaczenie
+5. używam "pwd" aby dowiedzieć się gdzie jestem: /home/ubuntu/Desktop
+6. polecenia "ls" wyświetla zawartość katalogu
+7. po wyklikaniu otrzymam to samo. Obecnie interfejs graficzny jest dla mnie łatwiejszy
+8. używam polecenia ls /home/ubuntu
+9. ls ../Pictures
+10. ponownie używam polecenia "pwd": /home/ubuntu/Pictures
+11. nic się nie stało
+12. użyłem "cd /home/ubuntu", następnie sprawdziłem czy zadziałało
+13. bash: cd: /root: Permission denied.  Prawdopodobnie nie mam uprawnień do folderu
+14. ctrl+alt+f1. Zostałem przełączony na terminal tekstowy. ctrl+alt+f7 przywróciło poprzedni pulpit

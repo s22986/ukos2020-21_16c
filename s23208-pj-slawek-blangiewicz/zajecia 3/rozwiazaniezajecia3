@@ -1,0 +1,32 @@
+A teraz wykonaj taką komendę:
+
+ls -a | grep D > ListaPlikówZLiterkąD.txt
+
+Zobacz czy utworzył się jakiś plik? Jaka jest jego treść? Co znaczy | oraz co znaczy >? 
+
+Utworzył się plik tekstowy ListaPlikowZLiterkaD.txt i jest w nim zapisany wynik powyższej komendy
+czyli wszystkie foldery i pliki, ktore w nazwie maja listere D.
+| to połaczenie wynikow dwoch komend.
+> to przekierowanie danych (np. do pliku txt, tak jak to zrobilismy przed chwila)
+
+Zadanie 1
+ps - wyswietlil wszystkie aktualnie uruchomione procesy
+ps -a - wyswietla uruchomione procesy poza procesem bash
+ps x - wyswietla procesy, ktorych wlascicielem jestem ja
+ps aux - wyswietla procesy wszystkich uzytkownikow
+1. ps -e wyswietla wszystkie procesy bash
+2. ps -u root - wyswietla wszystkie procesy uzytkownika root
+
+Zadanie 2
+Uruchomiłem edytor leafpad, jego PID to 1665
+Po użyciu komendy "kill 1665" edytor tekstowy sie zamknal.
+
+Zadanie 3
+Uzycie ctrl + C po wczesniejszym uzyciu komendy cat wypisuje wynik ctrl +c
+1,2,3,4. Plik wynik1.txt jest pusty, ponieważ ctrl +c zatrzymuje dzialanie procesu.
+1,2,3,4'. W pliku wynik2.txt zapisalo sie slowo "witaj"
+
+Zadanie 4
+1,2,3. ctrl +z zatrzymalo proces i uniemozliwa mi to uzywanie gimpa
+Po wpisaniu bg moglem zaczac korzystac z gimpa
+Nie wiem dlaczego, ale po użyciu & program nie uruchomil sie w tle

@@ -1,0 +1,14 @@
+Zajęcia 1:
+
+tworzenie folderów i plików, poruszanie się po folderach,  komendy cd, pwd, mk, rm, ls -la, touch, cat, vim, czytanie helpu. Porównywanie koonsoli z interfejsem graficznym, pull request..
+
+
+Zajęcia 2:
+
+Nauczyłem się, że są 3 grupy którymmożna nadawać prawa dostępu (user, group i others). Żeby zmienić prawa dostępu nalezy użyć komendy "chmod" następnie wybrać grupę {u, g, o},
+oraz jakie prawa mają być nadane. Prawa można nadawać na dwa sposoby: systemem ósemkowym i zwykłym.
+
+
+Zajęcia 3:
+
+Poznanie sposobu monitorowania i filtrowania procesów. Uruchamianie procesów w tle, ubijanie procesów
